@@ -99,6 +99,49 @@ h1 {
     padding: 10px 20px;
 }
 
+/* Explore mini menu */
+
+.kids {
+    background-image: url(/images/reading-2762010_1280-min.jpg);
+}
+
+.teachers {
+    background-image: url(/images/learn-2405206_1920-min.jpg);
+}
+
+.researchers {
+    background-image: url(/images/people-219985_1280.jpg);
+}
+
+.picture_box {
+    flex: 1;
+    height: 300px;
+    margin: 10px;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #ffffff;
+    text-align: center;
+}
+
+.picture_box p {
+    padding-top: 220px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.top_picture {
+    display: flex;
+}
+
+.top_picture a {
+    flex: 1;
+}
+
+/* End Explore mini menu */
 
 
 
