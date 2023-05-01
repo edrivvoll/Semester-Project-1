@@ -15,11 +15,71 @@ body {
 
 header {
     display: flex;
+    height: 70px;
+    border: black solid;
 }
 
 header img {
-    max-height: 50px;
+    height: 50px;
+    padding: 10px 0 0 10px;
+
 }
+
+/* Nav bar */
+
+nav,
+#nav-checkbox {
+    display: none;
+}
+
+#nav-checkbox:checked~nav {
+    display: inline-block;
+    transform: translate(10%);
+    transition: all .5s ease-in-out;
+}
+
+#nav-checkbox:focus {}
+
+.fa-bars {
+    font-size: 2em;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+
+}
+
+nav {
+    position: absolute;
+    top: 72.5px;
+    right: 0;
+    background-color: var(--bgcolor-menu);
+    border-radius: 0 0 0 20px;
+
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 2em;
+    color: black;
+    font-weight: 500;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0 20px;
+}
+
+/* Nav bar end */
 
 main {
     flex: 1;
@@ -31,6 +91,7 @@ h1 {
     padding: 50px;
     text-decoration: underline;
     max-width: 350px;
+    margin: 0;
 }
 
 .index h1 {
