@@ -16,7 +16,6 @@ body {
 header {
     display: flex;
     height: 70px;
-    border: black solid;
 }
 
 header img {
@@ -34,11 +33,8 @@ nav,
 
 #nav-checkbox:checked~nav {
     display: inline-block;
-    transform: translate(10%);
-    transition: all .5s ease-in-out;
 }
 
-#nav-checkbox:focus {}
 
 .fa-bars {
     font-size: 2em;
