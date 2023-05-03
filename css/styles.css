@@ -4,6 +4,7 @@
     --bgcolor-container-purpul: #CBB7FB;
     --bgcolor-menu: #FEFFC4;
     --bgcolor-grey: #D9D9D9;
+    --bgcolor-footer: #2D2926;
 }
 
 body {
@@ -228,4 +229,21 @@ iframe {
 
 footer {
     text-align: center;
+    color: #fff;
+    background-color: var(--bgcolor-footer);
+    padding: 30px 15px;
+
+
+}
+
+footer p {
+    margin: 0;
+    padding-top: 30px;
+}
+
+.line {
+    background-color: #fff;
+    width: auto;
+    height: 2px;
+    border-radius: 50px;
 }
