@@ -259,7 +259,7 @@ footer p {
     header {}
 
     main {
-        max-width: 1000px;
+        max-width: 1200px;
         margin: 0 auto;
     }
 
@@ -305,9 +305,117 @@ footer p {
         margin: 0 auto;
     }
 
+    /* Grid setup */
+
+    .grid {
+        display: grid;
+    }
+
+    .vertica_img img {
+        max-height: 150px;
+    }
+
+    /* Explore grid setup */
+
+    .explore_grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "kids kids"
+            "teachers researchers"
+            "teachers researchers";
+    }
+
+    #kids {
+        grid-area: kids;
+    }
+
+    #teachers {
+        grid-area: teachers;
+    }
+
+    #researchers {
+        grid-area: researchers;
+    }
+
+    /* Explore grid setup end */
+
+    /* Exhibition grid setup */
+
+    .exhibition_grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "cosmology cosmology"
+            "evolution biology"
+            "evolution biology"
+            "robotics ecology"
+            "robotics ecology"
+        ;
+    }
+
+    .cosmology {
+        grid-area: cosmology;
+    }
+
+    .evolution {
+        grid-area: evolution;
+    }
+
+    .biology {
+        grid-area: biology;
+    }
+
+    .robotics {
+        grid-area: robotics;
+    }
+
+    .ecology {
+        grid-area: ecology;
+    }
+
+    /* Exhibition grid setup end */
+
+    /* Events grid setup */
+
+    .events_grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "news news night"
+            "energetica energetica night"
+        ;
+    }
+
+    .news {
+        grid-area: news;
+    }
+
+    .night {
+        grid-area: night;
+    }
+
+    .energetica {
+        grid-area: energetica;
+    }
+
+    .energetica img {}
+
+    /* Events grid setup end */
+
+
+
+
+
+
+
     footer {}
 }
 
-@media (min-width: 800px) {}
+@media (min-width: 800px) {
+
+    /* nav bar */
+
+}
 
 @media (min-width: 1000px) {}
