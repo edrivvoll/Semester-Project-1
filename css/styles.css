@@ -1,6 +1,6 @@
 @font-face {
-    font-family: "Baskervi";
-    src: url(../fonts/baskervi.ttf);
+    font-family: "Librebaskerville";
+    src: url(../fonts/LibreBaskerville-Regular.ttf);
 }
 
 :root {
@@ -106,8 +106,9 @@ h1 {
     margin: 0;
 }
 
-h1 {
-    font-family: "Baskervi", serif;
+h1,
+h2 {
+    font-family: "Librebaskerville", serif;
 }
 
 .index h1 {
@@ -300,7 +301,7 @@ footer p {
     }
 
     .active {
-        background: radial-gradient(circle, rgba(43, 246, 51, 1) 0%, rgb(255, 255, 255) 100%);
+        background: radial-gradient(circle, rgba(43, 246, 51, 1) 0%, rgb(255, 255, 255) 70%);
     }
 
     nav a {}
