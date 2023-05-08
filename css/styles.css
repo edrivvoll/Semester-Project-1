@@ -77,7 +77,11 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
+
+
 }
+
+
 
 nav ul {
     margin: 0;
@@ -92,7 +96,7 @@ nav li {
 
 .active {
     background: rgb(43, 246, 51);
-    background: radial-gradient(circle, rgba(43, 246, 51, 1) 0%, rgba(254, 255, 196, 1) 100%);
+    background: radial-gradient(circle, rgb(105, 249, 110) 0%, rgba(254, 255, 196, 1) 100%);
 }
 
 /* Nav bar end */
@@ -111,7 +115,8 @@ h1 {
 }
 
 h1,
-h2 {
+h2,
+nav {
     font-family: "Librebaskerville", serif;
 }
 
@@ -305,16 +310,21 @@ footer p {
     nav li {
         display: inline-block;
         margin: 0 auto;
-        padding: 25.5px 5px;
+        padding: 25.5px 5px 25.5px 0;
 
     }
 
     nav a {
-        font-size: 0.91em;
+        font-size: 0.84em;
     }
 
     .active {
-        background: radial-gradient(circle, rgba(43, 246, 51, 1) 0%, rgb(255, 255, 255) 70%);
+        background: radial-gradient(circle, rgb(176, 250, 179) 0%, rgb(255, 255, 255) 70%);
+    }
+
+    nav li:hover {
+        background: radial-gradient(circle, var(--bgcolor-container-yellow) 0%, rgb(255, 255, 255) 70%);
+
     }
 
     nav a {}
@@ -481,11 +491,11 @@ footer p {
 
     /* nav bar */
     nav a {
-        font-size: 1.33em;
+        font-size: 1.26em;
     }
 
     nav li {
-        padding: 22px 10px;
+        padding: 22px 10px 22px 0;
     }
 
     .picture_box {
@@ -511,11 +521,11 @@ footer p {
     }
 
     nav a {
-        font-size: 1.45em;
+        font-size: 1.4em;
     }
 
     nav li {
-        padding: 21.5px 20px;
+        padding: 21px 25px 21px 0;
     }
 
     /* Nav bar end */
