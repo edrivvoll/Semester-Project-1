@@ -20,6 +20,10 @@ body {
     margin: 0;
 }
 
+p {
+    font-size: 1.2em;
+}
+
 header {
     height: 70px;
     position: sticky;
@@ -99,7 +103,7 @@ main {
 
 h1 {
     color: #ffffff;
-    font-size: 1.5em;
+    font-size: 2em;
     padding: 50px;
     text-decoration: underline;
     max-width: 350px;
@@ -149,7 +153,7 @@ h2 {
 }
 
 .content_container {
-    margin: 30px 10px;
+    margin: 30px;
     padding: 10px;
 }
 
@@ -169,7 +173,6 @@ h2 {
 .info_container {
     margin: 0;
     padding: 10px 20px;
-    border-bottom: var(--bgcolor-footer) solid 2px;
 }
 
 .grey {
@@ -192,7 +195,7 @@ h2 {
 }
 
 .picture_box {
-    flex: 1;
+
     height: 300px;
     margin: 10px;
     border-radius: 20px;
@@ -203,6 +206,7 @@ h2 {
     background-color: rgba(0, 0, 0, 0.75);
     color: #ffffff;
     text-align: center;
+    max-width: 200px;
 }
 
 .picture_box p {
@@ -214,11 +218,11 @@ h2 {
 
 .top_picture {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-.top_picture a {
-    flex: 1;
-}
+.top_picture a {}
 
 /* End Explore mini menu */
 
@@ -252,6 +256,7 @@ footer {
 footer p {
     margin: 0;
     padding-top: 30px;
+    font-size: small;
 }
 
 .line {
@@ -266,6 +271,14 @@ footer p {
     body {}
 
     header {}
+
+    h1 {
+        max-width: 550px;
+    }
+
+    .index h1 {
+        font-size: 1.3em;
+    }
 
     /* Nav bar */
 
@@ -297,7 +310,7 @@ footer p {
     }
 
     nav a {
-        font-size: 0.98em;
+        font-size: 0.91em;
     }
 
     .active {
@@ -462,14 +475,31 @@ footer p {
 
 @media (min-width: 800px) {
 
+
+
+
+
     /* nav bar */
     nav a {
-        font-size: 1.39em;
+        font-size: 1.33em;
     }
 
     nav li {
         padding: 22px 10px;
     }
+
+    .picture_box {
+        margin: 10px 30px;
+    }
+
+    .picture_box p {
+        font-size: 1.3em;
+    }
+
+    h1 {
+        max-width: 650px;
+    }
+
 }
 
 @media (min-width: 1000px) {
@@ -481,12 +511,85 @@ footer p {
     }
 
     nav a {
-        font-size: 1.39em;
+        font-size: 1.45em;
     }
 
     nav li {
-        padding: 22px 25px;
+        padding: 21.5px 20px;
     }
 
+    /* Nav bar end */
 
+    h1 {
+        max-width: 800px;
+    }
+
+    .index h1 {
+        font-size: 1.5em;
+    }
+
+    .picture_box p {
+        font-size: 1.5em;
+    }
+
+    /* Visit page */
+
+    .visit_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "location admission"
+            "access hours"
+            "food shop"
+        ;
+        padding: 30px 0;
+    }
+
+    .info_container {
+        padding: 40px;
+    }
+
+    .location {
+        grid-area: location;
+    }
+
+    .admission {
+        grid-area: admission;
+        border-radius: 20px 20px 20px 0;
+
+    }
+
+    .hours {
+        grid-area: hours;
+    }
+
+    .access {
+        grid-area: access;
+        border-radius: 20px 0 0 20px;
+    }
+
+    .food {
+        grid-area: food;
+    }
+
+    .shop {
+        grid-area: shop;
+        border-radius: 0 20px 20px 20px;
+    }
+
+    .visit_grid .info_container {
+        display: flex;
+        align-items: center;
+    }
+
+    iframe {
+        height: 300px;
+    }
+
+    /* Visit page end */
+
+    .volunteer {
+        border-radius: 20px;
+    }
 }
