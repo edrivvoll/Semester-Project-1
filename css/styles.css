@@ -50,7 +50,6 @@ nav,
     display: inline-block;
 }
 
-
 .fa-bars {
     font-size: 2em;
     position: absolute;
@@ -77,11 +76,7 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
-
-
 }
-
-
 
 nav ul {
     margin: 0;
@@ -182,7 +177,6 @@ nav {
 
 .grey {
     background-color: var(--bgcolor-grey);
-
 }
 
 /* Explore mini menu */
@@ -231,8 +225,6 @@ nav {
 
 /* End Explore mini menu */
 
-
-
 .purpul {
     background-color: var(--bgcolor-container-purpul);
 }
@@ -273,9 +265,6 @@ footer p {
 }
 
 @media (min-width: 600px) {
-    body {}
-
-    header {}
 
     h1 {
         max-width: 550px;
@@ -303,15 +292,10 @@ footer p {
         padding-right: 10px;
     }
 
-    nav ul {}
-
-
-
     nav li {
         display: inline-block;
         margin: 0 auto;
-        padding: 25.5px 5px 25.5px 0;
-
+        padding: 25.5px 2.5px;
     }
 
     nav a {
@@ -327,7 +311,6 @@ footer p {
 
     }
 
-    nav a {}
 
     main {
         max-width: 1200px;
@@ -470,24 +453,11 @@ footer p {
         grid-area: energetica;
     }
 
-    .energetica img {}
-
     /* Events grid setup end */
 
-
-
-
-
-
-
-    footer {}
 }
 
 @media (min-width: 800px) {
-
-
-
-
 
     /* nav bar */
     nav a {
@@ -495,7 +465,7 @@ footer p {
     }
 
     nav li {
-        padding: 22px 10px 22px 0;
+        padding: 22px 5px;
     }
 
     .picture_box {
@@ -525,7 +495,7 @@ footer p {
     }
 
     nav li {
-        padding: 21px 25px 21px 0;
+        padding: 21px 14.9px;
     }
 
     /* Nav bar end */
