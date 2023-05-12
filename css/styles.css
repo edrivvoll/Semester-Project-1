@@ -20,9 +20,6 @@ body {
     margin: 0;
 }
 
-p {
-    font-size: 1.2em;
-}
 
 header {
     height: 70px;
@@ -272,6 +269,10 @@ footer p {
 
     .index h1 {
         font-size: 1.3em;
+    }
+
+    p {
+        font-size: 1.2em;
     }
 
     /* Nav bar */
