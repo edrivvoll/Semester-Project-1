@@ -212,13 +212,16 @@ nav {
     word-spacing: 350px;
 }
 
+.top_picture a {
+    text-decoration: none;
+}
+
 .top_picture {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.top_picture a {}
 
 /* End Explore mini menu */
 
