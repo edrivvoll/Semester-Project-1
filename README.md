@@ -1,6 +1,6 @@
 # Square Eyes
 
-![image](./images/CMS_logo.png)
+![image](./images/CSM_Logo.jpg)
 
 Come join us at the Community Science Museum where we’re committed to making science accessible to all. 
 
